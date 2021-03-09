@@ -1,0 +1,14 @@
+# 配置learn_cookbook的git账号
+Host learn_cookbook
+HostName github.com
+IdentityFile C:\\Users\\GongJZ\\.ssh\\id_rsa
+PreferredAuthentications publickey
+User GongJiZ
+
+# 配置android_perf_scripts的git账号
+Host android_perf_scripts
+HostName niubigit.caijiyouxi.com
+Port 2022
+PreferredAuthentications publickey
+IdentityFile 
+User 
