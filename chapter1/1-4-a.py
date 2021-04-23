@@ -14,5 +14,5 @@ portfolio = [
     {'name': 'YHOO', 'shares': 45, 'price': 16.35},
     {'name': 'ACME', 'shares': 75, 'price': 115.65}
 ]
-print(nlargest(2, portfolio, key=lambda s:s['price']))
-print(nsmallest(2, portfolio, key=lambda s:s['price']))
+print(nlargest(2, portfolio, key=lambda s: s['price']))
+print(nsmallest(2, portfolio, key=lambda s: s['price']))
