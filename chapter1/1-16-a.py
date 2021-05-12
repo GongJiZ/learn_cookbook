@@ -1,14 +1,21 @@
 # 你有一个数据序列，想利用一些规则从中提取出需要的值或者是缩短序列
 mylist = [1, 4, -5, 10, -7, 2, 3, -1]
-# 最简单的过滤序列元素的方法就是使用列表推导。
+# 最简单的过滤序列元素的方法就是使用列表推导。取出所有整数或负数
 print([n for n in mylist if n > 0])
 print([n for n in mylist if n < 0])
 
-# filter
+# 节省内存的做法
+pos = (n for n in mylist if n > 0)
+for x in pos:
+    print(x)
+
+# filter 输出所有数字
 values = ['1', '2', '-3', '-', '4', 'N/A', '5']
+
+
 def is_int(val):
     try:
-        x = int(val)
+        int(val)
         return True
     except ValueError:
         return False
